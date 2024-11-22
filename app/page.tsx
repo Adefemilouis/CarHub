@@ -3,10 +3,10 @@ import CarCard from "@/components/CarCard";
 import CustomFilter from "@/components/CustomFilter";
 import Hero from "@/components/hero";
 import SearchBar from "@/components/SearchBar";
-import { fuels, manufacturers, yearsOfProduction } from "@/constants";
+import { fuels, yearsOfProduction } from "@/constants";
 import { HomeProps } from "@/types";
 import { fetchCars } from "@/utils";
-import Image from "next/image";
+
 
 export default async function Home({ searchParams } : HomeProps) {
 const allCars = await fetchCars({
